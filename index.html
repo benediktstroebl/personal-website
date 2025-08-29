@@ -1,298 +1,847 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Benedikt Stroebl</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Source Serif 4", serif;
-        font-weight: 400;
-        font-size: 16px;
-        background-color: #ffffff;
-        color: #444444;
-      }
+<head>
+  <title>Benedikt Stroebl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://benediktstroebl.github.io/#person",
+          "name": "Benedikt Stroebl",
+          "jobTitle": "CTO and Co-founder at Rid",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Rid",
+            "url": "https://rid.me"
+          },
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Princeton University"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Technical University of Munich"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Hertie School"
+            }
+          ],
+          "knowsAbout": [
+            "AI Agents",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Computer Science Research",
+            "AI Safety",
+            "AI Evaluation",
+            "Cybersecurity",
+            "Data Privacy",
+            "GPS Data Analysis"
+          ],
+          "sameAs": [
+            "https://scholar.google.de/citations?user=Q0f85fIAAAAJ&hl=en",
+            "https://github.com/benediktstroebl",
+            "https://x.com/benediktstroebl",
+            "https://www.linkedin.com/in/benediktstroebl/"
+          ],
+          "url": "https://benediktstroebl.github.io",
+          "image": "stroebl_benedikt.jpg",
+          "description": "CTO and Co-founder of Rid. PhD student at Princeton University researching AI agents, with a focus on enhancing their real-world usefulness and reliability.",
+          "hasOccupation": [
+            {
+              "@type": "Occupation",
+              "name": "CTO and Co-founder"
+            },
+            {
+              "@type": "Occupation",
+              "name": "PhD Student"
+            }
+          ],
+          "colleague": [
+            {
+              "@type": "Person",
+              "name": "Arvind Narayanan",
+              "url": "https://www.cs.princeton.edu/~arvindn/"
+            },
+            {
+              "@type": "Person",
+              "name": "Sayash Kapoor"
+            }
+          ],
+          "subjectOf": [
+            {
+              "@type": "NewsArticle",
+              "name": "AI agent benchmarks are misleading, study warns",
+              "url": "https://venturebeat.com/ai/ai-agent-benchmarks-are-misleading-study-warns/",
+              "datePublished": "2024-06",
+              "publisher": {
+                "@type": "Organization",
+                "name": "VentureBeat"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "AI Agents That Matter",
+          "url": "https://arxiv.org/abs/2407.01502",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Zachary S. Siegel"},
+            {"@type": "Person", "name": "Nitya Nadgir"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "HAL: The Holistic Agent Leaderboard for Centralized and Reproducible Agent Evaluation",
+          "url": "https://hal.cs.princeton.edu",
+          "datePublished": "2025",
+          "author": [
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Inference Scaling Laws: The Limits of LLM Resampling with Imperfect Verifiers",
+          "url": "https://arxiv.org/abs/2411.17501v2",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark",
+          "url": "https://arxiv.org/abs/2409.11363",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@type": "Person", "name": "Zachary S. Siegel"},
+            {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@type": "Person", "name": "Nitya Nadgir"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Localized Cultural Knowledge is Conserved and Controllable in Large Language Models",
+          "url": "https://arxiv.org/abs/2504.10191",
+          "datePublished": "2025",
+          "author": [
+            {"@type": "Person", "name": "Veniamin Veselovsky"},
+            {"@type": "Person", "name": "Berke Argin"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Chris Wendler"},
+            {"@type": "Person", "name": "Robert West"},
+            {"@type": "Person", "name": "James Evans"},
+            {"@type": "Person", "name": "Thomas L. Griffiths"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Safety devolution in AI agents",
+          "url": "https://arxiv.org/abs/2505.14215",
+          "datePublished": "2025",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@type": "Person", "name": "Cheng Yu"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Diyi Yang"},
+            {"@type": "Person", "name": "Orestis Papakyriakopoulos"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Dynamic Risk Assessments for Offensive Cybersecurity Agents",
+          "url": "https://arxiv.org/abs/2505.18384",
+          "datePublished": "2025",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@type": "Person", "name": "Boyi Wei"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Jiacen Xu"},
+            {"@type": "Person", "name": "Joie Zhang"},
+            {"@type": "Person", "name": "Zhou Li"},
+            {"@type": "Person", "name": "Peter Henderson"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Hindsight Merging: Diverse Data Generation with Language Models",
+          "url": "https://openreview.net/forum?id=gvsdQ72Peg&noteId=gvsdQ72Peg",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "The 41st Conference on Uncertainty in Artificial Intelligence"
+          },
+          "author": [
+            {"@type": "Person", "name": "Veniamin Veselovsky"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Gianluca Bencomo"},
+            {"@type": "Person", "name": "Dilip Arumugam"},
+            {"@type": "Person", "name": "Lisa Schut"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "The Book of Life approach: Enabling richness and scale for life course research",
+          "url": "https://arxiv.org/abs/2507.03027",
+          "datePublished": "2025",
+          "publisher": {
+            "@type": "Organization",
+            "name": "arXiv"
+          },
+          "author": [
+            {"@type": "Person", "name": "Mark D. Verhagen"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Tong Liu"},
+            {"@type": "Person", "name": "Lydia T. Liu"},
+            {"@type": "Person", "name": "Melissa J. Salganik"}
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Investigating vulnerabilities of GPS trip data to trajectory-user linking attacks",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/17489725.2025.2511649",
+          "datePublished": "2025",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Journal of Location Based Services"
+          },
+          "author": [
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Alexandra Kapp"}
+          ]
+        },
+        {
+          "@type": "BlogPosting",
+          "name": "Is AI progress slowing down? Making sense of recent technology trends and claims.",
+          "url": "https://www.aisnakeoil.com/p/is-ai-progress-slowing-down",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "AI Snake Oil"
+          },
+          "author": [
+            {"@type": "Person", "name": "Arvind Narayanan"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Sayash Kapoor"}
+          ]
+        },
+        {
+          "@type": "BlogPosting",
+          "name": "AI leaderboards are no longer useful. It's time to switch to Pareto curves.",
+          "url": "https://www.aisnakeoil.com/p/ai-leaderboards-are-no-longer-useful",
+          "datePublished": "2024",
+          "publisher": {
+            "@type": "Organization",
+            "name": "AI Snake Oil"
+          },
+          "author": [
+            {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Arvind Narayanan"}
+          ]
+        },
+        {
+          "@type": "Event",
+          "name": "Workshop on Useful and Reliable AI Agents",
+          "url": "https://sites.google.com/princeton.edu/agents-workshop",
+          "startDate": "2024-08",
+          "description": "Virtual Workshop with over 600 attendees",
+          "location": {
+            "@type": "Place",
+            "name": "Princeton University"
+          },
+          "organizer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Speaking at Lightspeed Venture Partners",
+          "workPerformed": {
+            "@type": "PodcastEpisode",
+            "name": "With Imperfect Verifiers, Scale Fails.",
+            "url": "https://www.youtube.com/watch?v=Id7ebjEqAW8&ab_channel=NnamdiIregbulem",
+            "datePublished": "2025-08",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Lightspeed Venture Partners"
+            }
+          },
+          "performer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "AI Agent Benchmarks Paper Club",
+          "url": "https://paperclub.aitinkerers.org/p/join-our-paper-club-on-ai-agent-benchmarks-with-princeton-university-ludus-labs",
+          "startDate": "2025-05",
+          "organizer": {
+            "@type": "Organization",
+            "name": "AI Tinkerers"
+          },
+          "performer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Building and evaluating AI agents that matter",
+          "startDate": "2025-03",
+          "location": "AWS Applied Scientists",
+          "performer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Speaking on Weaviate Podcast",
+          "workPerformed": {
+            "@type": "PodcastEpisode",
+            "name": "AI agents that matter",
+            "url": "https://open.spotify.com/episode/1hIC9RbSSqD8pAsaagSrDp",
+            "datePublished": "2024-09",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Weaviate Podcast"
+            }
+          },
+          "performer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "The perils of evaluating AI agents",
+          "startDate": "2024-05",
+          "location": "Meta (Core Applied Sciences)",
+          "performer": {
+            "@id": "https://benediktstroebl.github.io/#person"
+          }
+        }
+      ]
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      prefix = "benedikt";
+      connector = "@";
+      suffix = "rid.me";
+      document.getElementById("dynamic-content").textContent =
+        prefix + connector + suffix;
+    });
+  </script>
+</head>
 
-      img.borderedpicture {
-        background-color: #7d7d7d;
-        display: block;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
+<body>
+  <div
+    style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <div>
+      <h1>
+        Benedikt Stroebl
+      </h1>
 
-      a:link,
-      a:hover,
-      a:visited {
-        color: #0172d5;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      a:active {
-        color: #c75a00;
-      }
-
-      .venue,
-      .title,
-      .authors,
-      .preprint {
-        display: block;
-        line-height: 20px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-      }
-
-      .venue,
-      .preprint {
-        font-style: italic;
-      }
-
-      .preprint {
-        font-weight: 300;
-      }
-
-      .me {
-        font-weight: 400;
-      }
-
-      .authors {
-        font-weight: 300;
-      }
-    </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        prefix = "benedikt";
-        connector = "@";
-        suffix = "rid.me";
-        document.getElementById("dynamic-content").textContent =
-          prefix + connector + suffix;
-      });
-    </script>
-  </head>
-  <body>
-    <div style="max-width: 670px; margin: 40px auto 60px">
-      <div>
-        <h1
-          style="
-            margin: 0 0 16px 0;
-            padding: 0 0 16px 0;
-            border-bottom: 1px solid #999;
-          "
-        >
-          Benedikt Stroebl
-        </h1>
-
-        <p id="dynamic-content" style="font-style: italic"></p>
-      </div>
-
-      <div
-        style="float: right; width: 220px; max-width: 40%; margin-left: 15px"
-      >
-        <img
-          class="borderedpicture"
-          src="stroebl_benedikt.jpg"
-          alt="Photo of Benedikt Stroebl"
-          id="pic"
-          style="float: right; width: 100%; height: auto"
-        />
-      </div>
-
-      <div style="min-width: 200px; max-width: 430px">
-        <p style="margin-bottom: 30px">
-          I'm the cto and cofounder of <a href="https://rid.me" target="_blank">Rid</a>. tldr we make selling easier than buying.
-          <br /><br />
-          Before that, I was a PhD student at
-          Princeton University, advised by
-          <a href="https://www.cs.princeton.edu/~arvindn/" target="_blank"
-            >Arvind Narayanan</a
-          >. 
-          <!-- Previously, I graduated with a B.Sc. from the Technical University
-          of Munich (TUM) &amp; M.Sc. from the Hertie School. -->
-
-          <br /><br />
-        At Ludus Labs, we're building physically-simulated environments for AI agents to compete in sports-like competitions, creating a new form of entertainment while advancing AI capabilities.
-        <br /><br />
-        My research focuses on AI agents, with a focus on enhancing their real-world
-        usefulness and reliability. Part of that is developing rigorous evaluation frameworks and studying the limitations of inference scaling techniques. 
-        </p>
-      </div>
-
-      <p style="margin-bottom: 50px">
-        <a
-          href="https://scholar.google.de/citations?user=Q0f85fIAAAAJ&hl=en"
-          target="_blank"
-          >[Google Scholar]</a
-        >
-        <a href="https://github.com/benediktstroebl" target="_blank"
-          >[GitHub]</a
-        >
-        <a href="https://x.com/benediktstroebl" target="_blank">[X]</a>
+      <p id="dynamic-content">
       </p>
-
-      <div>
-        <h3>Selected Publications & Projects</h3>
-        <ul>
-          <li>
-            <p>
-              <span class="title"
-                ><a href="https://hal.cs.princeton.edu" target="_blank"
-                  >HAL: The Holistic Agent Leaderboard for Centralized and Reproducible Agent Evaluation</a
-                ></span
-              >
-              <span class="authors">Benedikt Stroebl*, Sayash Kapoor*, Arvind Narayanan</span>
-              <span class="preprint"
-                >(2025)</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title"
-                ><a href="https://arxiv.org/abs/2504.10191" target="_blank"
-                  >Localized Cultural Knowledge is Conserved and Controllable in Large Language Models</a
-                ></span
-              >
-              <span class="authors">Veniamin Veselovsky*, Berke Argin*, Benedikt Stroebl*, Chris Wendler, Robert West, James Evans, Thomas L. Griffiths, Arvind Narayanan</span>
-              <span class="preprint"
-                >(2025)</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title"
-                ><a href="https://arxiv.org/abs/2411.17501v2" target="_blank"
-                  >Inference Scaling 𝙛Laws: The Limits of LLM Resampling with Imperfect Verifiers</a
-                ></span
-              >
-              <span class="authors">Benedikt Stroebl*, Sayash Kapoor, Arvind Narayanan</span>
-              <span class="preprint"
-                >arXiv preprint 2411.17501 (2024)</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title"
-                ><a href="https://arxiv.org/abs/2409.11363" target="_blank"
-                  >CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark</a
-                ></span
-              >
-              <span class="authors">Zachary S. Siegel, Sayash Kapoor, Nitya Nagdir, Benedikt Stroebl, Arvind Narayanan</span>
-              <span class="preprint"
-                >arXiv preprint 2409.11363 (2024)</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title"
-                ><a href="https://arxiv.org/abs/2407.01502" target="_blank"
-                  >AI Agents That Matter</a
-                ></span
-              >
-              <span class="authors"
-                >Sayash Kapoor*, Benedikt Stroebl*, Zachary S. Siegel, Nitya
-                Nadgir, Arvind Narayanan</span
-              >
-              <span class="preprint"
-                >arXiv preprint 2407.01502 (2024)</span
-              >
-            </p>
-          </li>
-        </ul>
-        <p style="font-style: italic; margin-top: -0.8em">
-            (* indicates equal contribution)
-          </p>
-      </div>
-
-      <div>
-        <h3>Blog Posts</h3>
-        <ul>
-          <li>
-            <p>
-              <span class="title">
-                <a href="https://www.aisnakeoil.com/p/is-ai-progress-slowing-down" target="_blank">Is AI progress slowing down? Making sense of recent technology trends and claims.</a>
-              </span>
-              <span class="authors"
-              >Arvind Narayanan, Benedikt Stroebl, Sayash Kapoor</span
-              >
-            <span class="venue">AI Snake Oil (2024)</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title">
-                <a href="https://www.aisnakeoil.com/p/ai-leaderboards-are-no-longer-useful" target="_blank">AI leaderboards are no longer useful. It's time to switch to Pareto curves.</a>
-              </span>
-              <span class="authors"
-                >Sayash Kapoor*, Benedikt Stroebl*, Arvind Narayanan</span
-              >
-              <span class="venue">AI Snake Oil (2024)</span>
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Workshops</h3>
-        <ul>
-          <li>
-            <p>
-              <span class="title">
-                <a href="https://sites.google.com/princeton.edu/agents-workshop" target="_blank">Workshop on Useful and Reliable AI Agents</a>
-              </span>
-              <span class="venue">Princeton University. 600+ attendees. Virtual Workshop. August 2024.</span>
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Talks & Press</h3>
-        <ul>
-          <li>
-            <p>
-              <span class="title">
-                Building and evaluating AI agents that matter.
-              </span>
-              <span class="venue">AWS Applied Scientists. Invited talk. March 2025.</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title">
-                <a href="https://open.spotify.com/episode/1hIC9RbSSqD8pAsaagSrDp" target="_blank">AI agents that matter.</a>
-              </span>
-              <span class="venue">Weaviate Podcast. Podcast. September 2024.</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title">
-                <a href="https://venturebeat.com/ai/ai-agent-benchmarks-are-misleading-study-warns/" target="_blank">AI agent benchmarks are misleading, study warns.</a>
-              </span>
-              <span class="venue">VentureBeat. News article. June 2024.</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              <span class="title">
-                The perils of evaluating AI agents.
-              </span>
-              <span class="venue">Meta (Core Applied Sciences). Invited talk. May 2024.</span>
-            </p>
-          </li>
-        </ul>
-      </div>
     </div>
-  </body>
+
+    <div>
+      <img
+        src="stroebl_benedikt.jpg"
+        alt="Photo of Benedikt Stroebl"
+        id="pic" width="60%"
+        style="max-width: 300px;" />
+    </div>
+
+    <div>
+      <p>
+        I'm the cto and
+        cofounder of <a
+          href="https://rid.me"
+          target="_blank">Rid</a>.
+        <br /><br />
+        Before that, I was a
+        PhD student at
+        Princeton University,
+        advised by
+        <a href="https://www.cs.princeton.edu/~arvindn/"
+          target="_blank">Arvind
+          Narayanan</a>.
+        <br /><br />
+        My research focuses on
+        AI agents, with a
+        focus on enhancing
+        their real-world
+        usefulness and
+        reliability. Part of
+        that is developing
+        rigorous evaluation
+        frameworks and
+        studying the
+        limitations of
+        inference scaling
+        techniques.
+      </p>
+    </div>
+
+    <p>
+      <a href="https://scholar.google.de/citations?user=Q0f85fIAAAAJ&hl=en"
+        target="_blank">[Google
+        Scholar]</a>
+      <a href="https://github.com/benediktstroebl"
+        target="_blank">[GitHub]</a>
+      <a href="https://x.com/benediktstroebl"
+        target="_blank">[X]</a>
+    </p>
+
+    <div>
+      <h3>Selected
+        Publications</h3>
+      <ul>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2407.01502"
+                target="_blank">AI
+                Agents That
+                Matter</a></span>
+            <span>Sayash
+              Kapoor*,
+              Benedikt
+              Stroebl*,
+              Zachary S.
+              Siegel, Nitya
+              Nadgir, Arvind
+              Narayanan</span>
+            <span>arXiv
+              preprint
+              2407.01502
+              (2024)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://hal.cs.princeton.edu"
+                target="_blank">HAL:
+                The Holistic
+                Agent
+                Leaderboard
+                for
+                Centralized
+                and
+                Reproducible
+                Agent
+                Evaluation</a></span>
+            <span>Benedikt
+              Stroebl*, Sayash
+              Kapoor*, Arvind
+              Narayanan</span>
+            <span>(2025)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2411.17501v2"
+                target="_blank">Inference
+                Scaling
+                𝙛Laws: The
+                Limits of LLM
+                Resampling
+                with Imperfect
+                Verifiers</a></span>
+            <span>Benedikt
+              Stroebl*, Sayash
+              Kapoor, Arvind
+              Narayanan</span>
+            <span>arXiv
+              preprint
+              2411.17501
+              (2024)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2409.11363"
+                target="_blank">CORE-Bench:
+                Fostering the
+                Credibility of
+                Published
+                Research
+                Through a
+                Computational
+                Reproducibility
+                Agent
+                Benchmark</a></span>
+            <span>Zachary S.
+              Siegel, Sayash
+              Kapoor, Nitya
+              Nagdir, Benedikt
+              Stroebl, Arvind
+              Narayanan</span>
+            <span>arXiv
+              preprint
+              2409.11363
+              (2024)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2504.10191"
+                target="_blank">Localized
+                Cultural
+                Knowledge is
+                Conserved and
+                Controllable
+                in Large
+                Language
+                Models</a></span>
+            <span>Veniamin
+              Veselovsky*,
+              Berke Argin*,
+              Benedikt
+              Stroebl*, Chris
+              Wendler, Robert
+              West, James
+              Evans, Thomas L.
+              Griffiths,
+              Arvind
+              Narayanan</span>
+            <span>(2025)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2505.14215"
+                target="_blank">Safety
+                devolution in
+                AI
+                agents</a></span>
+            <span>Cheng Yu,
+              Benedikt
+              Stroebl, Diyi
+              Yang, Orestis
+              Papakyriakopoulos</span>
+            <span>arXiv
+              preprint
+              2505.14215
+              (2025)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2505.18384"
+                target="_blank">Dynamic
+                Risk
+                Assessments
+                for Offensive
+                Cybersecurity
+                Agents</a></span>
+            <span>Boyi Wei*,
+              Benedikt
+              Stroebl*, Jiacen
+              Xu, Joie Zhang,
+              Zhou Li,
+              Peter
+              Henderson</span>
+            <span>arXiv
+              preprint
+              2505.18384
+              (2025)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://openreview.net/forum?id=gvsdQ72Peg&noteId=gvsdQ72Peg"
+                target="_blank">Hindsight
+                Merging:
+                Diverse Data
+                Generation
+                with Language
+                Models</a></span>
+            <span>Veniamin
+              Veselovsky*,
+              Benedikt
+              Stroebl*,
+              Gianluca
+              Bencomo*, Dilip
+              Arumugam, Lisa
+              Schut</span>
+            <span>The 41st
+              Conference on
+              Uncertainty in
+              Artificial
+              Intelligence</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2507.03027"
+                target="_blank">The
+                Book of Life
+                approach:
+                Enabling
+                richness and
+                scale for life
+                course
+                research</a></span>
+            <span>Mark D.
+              Verhagen,
+              Benedikt
+              Stroebl, Tiffany
+              Liu, Lydia T.
+              Liu, Matthew J.
+              Salganik</span>
+            <span>arXiv
+              preprint
+              2507.03027
+              (2025)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://www.tandfonline.com/doi/abs/10.1080/17489725.2025.2511649"
+                target="_blank">Investigating
+                vulnerabilities
+                of GPS trip
+                data to
+                trajectory-user
+                linking
+                attacks</a></span>
+            <span>Benedikt
+              Stroebl*,
+              Alexandra
+              Kapp</span>
+            <span>Journal of
+              Location Based
+              Services
+              (2025)</span>
+          </p>
+        </li>
+      </ul>
+      <p>
+        (* indicates equal
+        contribution)
+      </p>
+    </div>
+
+    <div>
+      <h3>Blog Posts</h3>
+      <ul>
+        <li>
+          <p>
+            <span>
+              <a href="https://www.aisnakeoil.com/p/is-ai-progress-slowing-down"
+                target="_blank">Is
+                AI progress
+                slowing down?
+                Making sense
+                of recent
+                technology
+                trends and
+                claims.</a>
+            </span>
+            <span>Arvind
+              Narayanan,
+              Benedikt
+              Stroebl, Sayash
+              Kapoor</span>
+            <span>AI Snake Oil
+              (2024)</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              <a href="https://www.aisnakeoil.com/p/ai-leaderboards-are-no-longer-useful"
+                target="_blank">AI
+                leaderboards
+                are no longer
+                useful. It's
+                time to switch
+                to Pareto
+                curves.</a>
+            </span>
+            <span>Sayash
+              Kapoor*,
+              Benedikt
+              Stroebl*, Arvind
+              Narayanan</span>
+            <span>AI Snake Oil
+              (2024)</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Workshops</h3>
+      <ul>
+        <li>
+          <p>
+            <span>
+              <a href="https://sites.google.com/princeton.edu/agents-workshop"
+                target="_blank">Workshop
+                on Useful and
+                Reliable AI
+                Agents</a>
+            </span>
+            <span>Princeton
+              University. 600+
+              attendees.
+              Virtual
+              Workshop. August
+              2024.</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Talks & Press</h3>
+      <ul>
+        <li>
+          <p>
+            <span>
+              <a href="https://www.youtube.com/watch?v=Id7ebjEqAW8&ab_channel=NnamdiIregbulem"
+                target="_blank">With
+                Imperfect
+                Verifiers,
+                Scale
+                Fails.</a>
+            </span>
+            <span>Nnamdi
+              Iregbulem from
+              Lightspeed
+              Venture
+              Partners.
+              Invited Podcast.
+              August
+              2025.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              <a href="https://paperclub.aitinkerers.org/p/join-our-paper-club-on-ai-agent-benchmarks-with-princeton-university-ludus-labs"
+                target="_blank">AI
+                Agent
+                Benchmarks
+                Paper Club |
+                AI
+                Tinkerers</a>
+            </span>
+            <span>AI
+              Tinkerers.
+              Invited Talk.
+              May 2025.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              Building and
+              evaluating AI
+              agents that
+              matter.
+            </span>
+            <span>AWS Applied
+              Scientists.
+              Invited talk.
+              March
+              2025.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              <a href="https://open.spotify.com/episode/1hIC9RbSSqD8pAsaagSrDp"
+                target="_blank">AI
+                agents that
+                matter.</a>
+            </span>
+            <span>Weaviate
+              Podcast.
+              Podcast.
+              September
+              2024.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              <a href="https://venturebeat.com/ai/ai-agent-benchmarks-are-misleading-study-warns/"
+                target="_blank">AI
+                agent
+                benchmarks are
+                misleading,
+                study
+                warns.</a>
+            </span>
+            <span>VentureBeat.
+              News article.
+              June
+              2024.</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>
+              The perils of
+              evaluating AI
+              agents.
+            </span>
+            <span>Meta (Core
+              Applied
+              Sciences).
+              Invited talk.
+              May 2024.</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
