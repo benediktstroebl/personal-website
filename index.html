@@ -88,10 +88,10 @@
           "@type": "ScholarlyArticle",
           "name": "AI Agents That Matter",
           "url": "https://arxiv.org/abs/2407.01502",
-          "datePublished": "2024",
+          "datePublished": "2025",
           "publisher": {
             "@type": "Organization",
-            "name": "arXiv"
+            "name": "Transactions on Machine Learning Research"
           },
           "author": [
             {"@type": "Person", "name": "Sayash Kapoor"},
@@ -103,23 +103,55 @@
         },
         {
           "@type": "ScholarlyArticle",
-          "name": "HAL: The Holistic Agent Leaderboard for Centralized and Reproducible Agent Evaluation",
+          "name": "Holistic agent leaderboard: The missing infrastructure for ai agent evaluation",
           "url": "https://hal.cs.princeton.edu",
-          "datePublished": "2025",
+          "datePublished": "2026",
+          "publisher": {
+            "@type": "Organization",
+            "name": "The Fourteenth International Conference on Learning Representations (ICLR 2026)"
+          },
           "author": [
-            {"@id": "https://benediktstroebl.github.io/#person"},
             {"@type": "Person", "name": "Sayash Kapoor"},
+            {"@id": "https://benediktstroebl.github.io/#person"},
+            {"@type": "Person", "name": "Peter Kirgis"},
+            {"@type": "Person", "name": "Nitya Nadgir"},
+            {"@type": "Person", "name": "Zachary S Siegel"},
+            {"@type": "Person", "name": "Boyi Wei"},
+            {"@type": "Person", "name": "Tianci Xue"},
+            {"@type": "Person", "name": "Ziru Chen"},
+            {"@type": "Person", "name": "Felix Chen"},
+            {"@type": "Person", "name": "Saiteja Utpala"},
+            {"@type": "Person", "name": "Franck Ndzomga"},
+            {"@type": "Person", "name": "Dheeraj Oruganty"},
+            {"@type": "Person", "name": "Sophie Luskin"},
+            {"@type": "Person", "name": "Kangheng Liu"},
+            {"@type": "Person", "name": "Botao Yu"},
+            {"@type": "Person", "name": "Amit Arora"},
+            {"@type": "Person", "name": "Dongyoon Hahm"},
+            {"@type": "Person", "name": "Harsh Trivedi"},
+            {"@type": "Person", "name": "Huan Sun"},
+            {"@type": "Person", "name": "Juyong Lee"},
+            {"@type": "Person", "name": "Tengjun Jin"},
+            {"@type": "Person", "name": "Yifan Mai"},
+            {"@type": "Person", "name": "Yifei Zhou"},
+            {"@type": "Person", "name": "Yuxuan Zhu"},
+            {"@type": "Person", "name": "Rishi Bommasani"},
+            {"@type": "Person", "name": "Daniel Kang"},
+            {"@type": "Person", "name": "Dawn Song"},
+            {"@type": "Person", "name": "Peter Henderson"},
+            {"@type": "Person", "name": "Yu Su"},
+            {"@type": "Person", "name": "Percy Liang"},
             {"@type": "Person", "name": "Arvind Narayanan"}
           ]
         },
         {
           "@type": "ScholarlyArticle",
-          "name": "Inference Scaling Laws: The Limits of LLM Resampling with Imperfect Verifiers",
+          "name": "The Limits of Inference Scaling Through Resampling",
           "url": "https://arxiv.org/abs/2411.17501v2",
-          "datePublished": "2024",
+          "datePublished": "2026",
           "publisher": {
             "@type": "Organization",
-            "name": "arXiv"
+            "name": "The Fourteenth International Conference on Learning Representations (ICLR 2026)"
           },
           "author": [
             {"@id": "https://benediktstroebl.github.io/#person"},
@@ -131,10 +163,10 @@
           "@type": "ScholarlyArticle",
           "name": "CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark",
           "url": "https://arxiv.org/abs/2409.11363",
-          "datePublished": "2024",
+          "datePublished": "2025",
           "publisher": {
             "@type": "Organization",
-            "name": "arXiv"
+            "name": "Transactions on Machine Learning Research"
           },
           "author": [
             {"@type": "Person", "name": "Zachary S. Siegel"},
@@ -167,7 +199,7 @@
           "datePublished": "2025",
           "publisher": {
             "@type": "Organization",
-            "name": "arXiv"
+            "name": "NeurIPS 2025"
           },
           "author": [
             {"@type": "Person", "name": "Cheng Yu"},
@@ -183,7 +215,7 @@
           "datePublished": "2025",
           "publisher": {
             "@type": "Organization",
-            "name": "arXiv"
+            "name": "NeurIPS 2025"
           },
           "author": [
             {"@type": "Person", "name": "Boyi Wei"},
@@ -361,6 +393,16 @@
       suffix = "gmail.com";
       document.getElementById("dynamic-content").textContent =
         prefix + connector + suffix;
+
+      fetch("https://api.github.com/repos/princeton-pli/hal-harness")
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          var el = document.getElementById("hal-harness-stats");
+          if (el && data.stargazers_count !== undefined) {
+            el.textContent = data.stargazers_count + " stars, " + data.forks_count + " forks.";
+          }
+        })
+        .catch(function () {});
     });
   </script>
 </head>
@@ -378,11 +420,11 @@
     </div>
 
     <div>
-      <img
+      <!-- <img
         src="stroebl_benedikt.jpg"
         alt="Photo of Benedikt Stroebl"
         id="pic" width="60%"
-        style="max-width: 300px;" />
+        style="max-width: 200px;" /> -->
     </div>
 
     <div>
@@ -436,58 +478,78 @@
                 Matter</a></span>
             <span>Sayash
               Kapoor*,
-              Benedikt
-              Stroebl*,
+              <strong>Benedikt
+              Stroebl</strong>*,
               Zachary S.
               Siegel, Nitya
               Nadgir, Arvind
               Narayanan</span>
-            <span>arXiv
-              preprint
-              2407.01502
-              (2024)</span>
+            <br/><em>Transactions on Machine Learning Research
+              (2025)</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2505.14215"
+                target="_blank">Safety
+                devolution in
+                AI
+                agents</a></span>
+            <span>Cheng Yu,
+              <strong>Benedikt
+              Stroebl</strong>, Diyi
+              Yang, Orestis
+              Papakyriakopoulos</span>
+            <br/><em>Conference on Neural Information Processing Systems (NeurIPS)
+              (2025)</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><a
+                href="https://arxiv.org/abs/2505.18384"
+                target="_blank">Dynamic
+                Risk
+                Assessments
+                for Offensive
+                Cybersecurity
+                Agents</a></span>
+            <span>Boyi Wei*,
+              <strong>Benedikt
+              Stroebl</strong>*, Jiacen
+              Xu, Joie Zhang,
+              Zhou Li,
+              Peter
+              Henderson</span>
+            <br/><em>Conference on Neural Information Processing Systems (NeurIPS)
+              (2025)</em>
           </p>
         </li>
         <li>
           <p>
             <span><a
                 href="https://hal.cs.princeton.edu"
-                target="_blank">HAL:
-                The Holistic
-                Agent
-                Leaderboard
-                for
-                Centralized
-                and
-                Reproducible
-                Agent
-                Evaluation</a></span>
-            <span>Benedikt
-              Stroebl*, Sayash
-              Kapoor*, Arvind
-              Narayanan</span>
-            <span>(2025)</span>
+                target="_blank">Holistic agent leaderboard: The missing infrastructure for ai agent evaluation</a></span>
+            <span>Sayash
+              Kapoor*,
+              <strong>Benedikt
+              Stroebl</strong>*, + 29 more authors</span>
+            <br/><em>The Fourteenth International Conference on Learning Representations (ICLR)
+              (2026)</em>
           </p>
         </li>
         <li>
           <p>
             <span><a
                 href="https://arxiv.org/abs/2411.17501v2"
-                target="_blank">Inference
-                Scaling
-                𝙛Laws: The
-                Limits of LLM
-                Resampling
-                with Imperfect
-                Verifiers</a></span>
-            <span>Benedikt
-              Stroebl*, Sayash
+                target="_blank">The Limits of Inference Scaling Through Resampling</a></span>
+            <span><strong>Benedikt
+              Stroebl</strong>*, Sayash
               Kapoor, Arvind
               Narayanan</span>
-            <span>arXiv
-              preprint
-              2411.17501
-              (2024)</span>
+            <br/><em>The Fourteenth International Conference on Learning Representations (ICLR)
+              (2026)</em>
           </p>
         </li>
         <li>
@@ -507,13 +569,11 @@
             <span>Zachary S.
               Siegel, Sayash
               Kapoor, Nitya
-              Nagdir, Benedikt
-              Stroebl, Arvind
+              Nagdir, <strong>Benedikt
+              Stroebl</strong>, Arvind
               Narayanan</span>
-            <span>arXiv
-              preprint
-              2409.11363
-              (2024)</span>
+            <br/><em>Transactions on Machine Learning Research
+              (2025)</em>
           </p>
         </li>
         <li>
@@ -531,57 +591,15 @@
             <span>Veniamin
               Veselovsky*,
               Berke Argin*,
-              Benedikt
-              Stroebl*, Chris
+              <strong>Benedikt
+              Stroebl</strong>*, Chris
               Wendler, Robert
               West, James
               Evans, Thomas L.
               Griffiths,
               Arvind
               Narayanan</span>
-            <span>(2025)</span>
-          </p>
-        </li>
-        <li>
-          <p>
-            <span><a
-                href="https://arxiv.org/abs/2505.14215"
-                target="_blank">Safety
-                devolution in
-                AI
-                agents</a></span>
-            <span>Cheng Yu,
-              Benedikt
-              Stroebl, Diyi
-              Yang, Orestis
-              Papakyriakopoulos</span>
-            <span>arXiv
-              preprint
-              2505.14215
-              (2025)</span>
-          </p>
-        </li>
-        <li>
-          <p>
-            <span><a
-                href="https://arxiv.org/abs/2505.18384"
-                target="_blank">Dynamic
-                Risk
-                Assessments
-                for Offensive
-                Cybersecurity
-                Agents</a></span>
-            <span>Boyi Wei*,
-              Benedikt
-              Stroebl*, Jiacen
-              Xu, Joie Zhang,
-              Zhou Li,
-              Peter
-              Henderson</span>
-            <span>arXiv
-              preprint
-              2505.18384
-              (2025)</span>
+            <br/><em>arXiv:2504.10191 (2025)</em>
           </p>
         </li>
         <li>
@@ -596,17 +614,17 @@
                 Models</a></span>
             <span>Veniamin
               Veselovsky*,
-              Benedikt
-              Stroebl*,
+              <strong>Benedikt
+              Stroebl</strong>*,
               Gianluca
               Bencomo*, Dilip
               Arumugam, Lisa
               Schut</span>
-            <span>The 41st
+            <br/><em>The 41st
               Conference on
               Uncertainty in
               Artificial
-              Intelligence</span>
+              Intelligence (2025)</em>
           </p>
         </li>
         <li>
@@ -623,15 +641,15 @@
                 research</a></span>
             <span>Mark D.
               Verhagen,
-              Benedikt
-              Stroebl, Tiffany
+              <strong>Benedikt
+              Stroebl</strong>, Tiffany
               Liu, Lydia T.
               Liu, Matthew J.
               Salganik</span>
-            <span>arXiv
+            <br/><em>arXiv
               preprint
               2507.03027
-              (2025)</span>
+              (2025)</em>
           </p>
         </li>
         <li>
@@ -645,14 +663,14 @@
                 trajectory-user
                 linking
                 attacks</a></span>
-            <span>Benedikt
-              Stroebl*,
+            <span><strong>Benedikt
+              Stroebl</strong>*,
               Alexandra
               Kapp</span>
-            <span>Journal of
+            <br/><em>Journal of
               Location Based
               Services
-              (2025)</span>
+              (2025)</em>
           </p>
         </li>
       </ul>
@@ -660,6 +678,20 @@
         (* indicates equal
         contribution)
       </p>
+    </div>
+
+    <div>
+      <h3>Open Source Projects</h3>
+      <ul>
+        <li>
+          <p>
+            <span><a
+                href="https://github.com/princeton-pli/hal-harness"
+                target="_blank">HAL Harness</a></span>
+            <span>A standardized evaluation harness for reproducible agent evaluations across various benchmarks. Powered the more than 21,730 agent rollouts across 9 models and 9 benchmarks in coding, web navigation, science, and customer service (~$40,000 in compute) for the official HAL paper. <span id="hal-harness-stats"></span></span>
+          </p>
+        </li>
+      </ul>
     </div>
 
     <div>
@@ -680,11 +712,11 @@
             </span>
             <span>Arvind
               Narayanan,
-              Benedikt
-              Stroebl, Sayash
+              <strong>Benedikt
+              Stroebl</strong>, Sayash
               Kapoor</span>
-            <span>AI Snake Oil
-              (2024)</span>
+            <br/><em>AI Snake Oil
+              (2024)</em>
           </p>
         </li>
         <li>
@@ -701,11 +733,11 @@
             </span>
             <span>Sayash
               Kapoor*,
-              Benedikt
-              Stroebl*, Arvind
+              <strong>Benedikt
+              Stroebl</strong>*, Arvind
               Narayanan</span>
-            <span>AI Snake Oil
-              (2024)</span>
+            <br/><em>AI Snake Oil
+              (2024)</em>
           </p>
         </li>
       </ul>
